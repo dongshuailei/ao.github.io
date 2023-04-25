@@ -354,7 +354,7 @@
     let id = event.target.dataset.id
     if (confirm('确认删除吗'))
       $.ajax({
-        url: 'http://81.68.107.245/api/songs/' + id,
+        url: 'https://mp3.zzgoodqc.cn/api/songs/' + id,
         type: 'DELETE',
         dataType: 'json',
         success: function (data) {
@@ -389,7 +389,7 @@
   let shuju = null
   function tian() {
     $.ajax({
-      url: 'http://81.68.107.245/api/songs',
+      url: 'https://mp3.zzgoodqc.cn/api/songs',
       type: 'GET',
       data: {
         page: fy,
@@ -442,7 +442,7 @@
     event.preventDefault()
     $('#formObjDDD').css('display', 'none')
     $.ajax({
-      url: 'http://81.68.107.245/api/songs/' + bianliang,
+      url: 'https://mp3.zzgoodqc.cn/api/songs/' + bianliang,
       type: "GET",
       dataType: "json",
       headers: {
@@ -481,7 +481,7 @@
     event.preventDefault()
     $('#formObjD').css('display', 'none')
     $.ajax({
-      url: 'http://81.68.107.245/api/songs/' + bianliang,
+      url: 'https://mp3.zzgoodqc.cn/api/songs/' + bianliang,
       type: "PUT",
       dataType: "json",
       headers: {
